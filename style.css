@@ -1,0 +1,118 @@
+/* Theme colours are bluish/purple: {9476ab, 724c8f, 532b72, 391356, 220439}; */
+
+/*set some default styles*/
+h1,
+h3,
+header,
+section,
+footer {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Indie FLower";
+}
+
+body,
+form,
+input,
+div,
+table,
+tr {
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Header */
+header h1 {
+  margin: 0;
+  color: #220439;
+  font-size: 2.6em;
+  transition: font 0.32s;
+}
+
+/* Content */
+section h3 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: #391356;
+}
+
+.the-form {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+.canvas-size-wrapper {
+  padding: 8px 0;
+  width: 100%;
+  font-size: 1em;
+  transition: font 0.36s;
+}
+
+.submit-wrapper {
+  width: 100%;
+}
+
+.submit-wrapper input {
+  padding: 16px;
+  border: 2px solid #9476ab;
+  background: none;
+  color: #220439;
+}
+
+.submit-wrapper input:active {
+  text-decoration: underline;
+  border: 2px solid #fff;
+  background-color: #9476ab;
+  color: #fff;
+}
+
+/* Pixels Table */
+
+.design-canvas {
+  margin: 0 auto 128px;
+}
+
+.grid-col {
+	padding: 0;
+	margin: 0;
+	width: 20px;
+	height: 20px;
+	box-shadow: 0 0 0 1px #000;
+}
+
+/*RESPONSIVENESS*/
+
+/* Tablets */
+@media screen and (min-width: 700px) {
+  header h1 {
+    font-size: 3.6em;
+  }
+
+  .canvas-size-wrapper {
+    width: 50%;
+    font-size: 1.2em;
+  }
+
+  .submit-wrapper {
+    margin-top: 16px;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1100px) {
+  header h1 {
+    font-size: 6em;
+  }
+
+  section h3 {
+    font-size: 1.8em;
+  }
+}
