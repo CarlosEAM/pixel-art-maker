@@ -1,9 +1,13 @@
 /*
 * TODO:
-  1. add a convinience side panel for mobile users to:
-    1.1 retrieve colour in pixel by pressing it
-    1.2 clear the grib keeping the same N x M values use to make the grid
-    1.3 colour palette for non standards browsers
+  1. add a convinience side panel for mobile user.
+    1.1 to hide all the tools available. stops users from having to do much scrolling.
+  2. retrieve colour in pixel by pressing it. Stops from having to use the colour wheel when
+  the user wishes to use a colour they have already used.
+  3. Clear grid button. Clears the grid keeping the same N x M values use to make the grid.
+  4. Colour palette for non standards browsers. Will need to research this one a bit.
+  5. Make sure the site conforms with A11Y-ARIA! important.
+  6. Grid should have limit depending on screen size??
 */
 
 // set brush colour to default, black
@@ -27,7 +31,6 @@ function initPixelArt() {
   $('.grid-height').prop('value', '1'); 
   colorPicker.prop('value', "#000000");
 }
-
 
 /**
 * @description Takes the user input and creates a grid for drawing
