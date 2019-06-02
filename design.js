@@ -6,7 +6,6 @@
   the user wishes to use a colour they have already used.
   3. Clear grid button. Clears the grid keeping the same N x M values use to make the grid.
   4. Colour palette for non standards browsers. Will need to research this one a bit.
-  5. Make sure the site conforms with A11Y-ARIA! important.
   6. Grid should have limit depending on screen size??
 */
 
