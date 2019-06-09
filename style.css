@@ -30,6 +30,11 @@ header h1 {
   transition: font 0.32s;
 }
 
+/* Footer */
+footer {
+  margin-top: 128px;
+}
+
 /* Content */
 section h3 {
   margin-top: 40px;
@@ -60,14 +65,16 @@ section h3 {
   width: 100%;
 }
 
-.submit-wrapper input {
+.submit-wrapper input,
+.clear-canvas {
   padding: 16px;
   border: 2px solid #9476ab;
   background: none;
   color: #220439;
 }
 
-.submit-wrapper input:active {
+.submit-wrapper input:active,
+.clear-canvas:active {
   text-decoration: underline;
   border: 2px solid #fff;
   background-color: #9476ab;
@@ -77,7 +84,7 @@ section h3 {
 /* Pixels Table */
 
 .design-canvas {
-  margin: 0 auto 128px;
+  margin: 0 auto 24px;
 }
 
 .grid-col {
