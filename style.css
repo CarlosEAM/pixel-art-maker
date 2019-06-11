@@ -84,7 +84,6 @@ h4 {
 }
 
 /* Pixels Table */
-
 .design-canvas {
   margin: 0 auto 24px;
 }
@@ -99,8 +98,15 @@ h4 {
 
 /* Tools Pallete */
 .tools-pallete-container {
+  margin-top: 64px;
+  margin-bottom: 32px;
   display: inline-grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 80px;
+}
+
+.clear-canvas {
+  border-radius: 50%;
 }
 
 /*RESPONSIVENESS*/
