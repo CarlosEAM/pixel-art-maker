@@ -11,6 +11,9 @@
 // set brush colour to default, black
 let brushColor = '#000000';
 
+// if eraser is off teh paint brush in active
+let eraserOn = false;
+
 /**
 * @description Set event listeners and default values
 */
@@ -22,6 +25,10 @@ function initPixelArt() {
 
   // set event listener on clear button
   $('.clear-canvas').on('click', clearGrid);
+
+  // set listerner for eraser
+  let eraser = $('#eraser');
+  eraser.on('change', erasePixel);
 
   // set event listener on the colour picker and update the brush colour to its most current value
   let colorPicker = $('.color-picker');
@@ -59,7 +66,15 @@ function makeGrid() {
   }
 
   // set event listeners on each pixel
-  $('td').on('click', paintPixel);
+  $('td').on('click', toolsPallete);
+}
+
+/**
+* Tools pallete looks after the paint brush, eraser and clear
+*/
+function toolsPallete() {
+  color = (eraserOn)?'#ffffff':brushColor;
+  paintPixel($(this), color);
 }
 
 /**
@@ -72,8 +87,15 @@ function clearGrid() {
 /**
 * @description Use brush colour to paint pixel
 */
-function paintPixel(){
-  $(this).css('background-color', brushColor);
+function paintPixel(pixel, color){
+  pixel.css('background-color', color);
+}
+
+/**
+* @description Erase pixel colours setting it back to white
+*/
+function erasePixel() {
+  eraserOn = (eraserOn)?false:true;
 }
 
 // wait for page load

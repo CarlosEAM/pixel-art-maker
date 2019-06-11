@@ -37,10 +37,16 @@
       </div>
     </form>
 
-    <!-- colour palette for user select, as per request -->
-    <div>
-      <h3>Choose brush colour</h3>
-      <input type="color" class="color-picker" aria-label="Choose brush colour">
+    <!-- tools palette, colour select, eraser -->
+    <div class="tools-pallete-container">
+      <div class="color-select-item">
+        <h4>Brush colour</h4>
+        <input type="color" class="color-picker" aria-label="Choose brush colour">
+      </div>
+      <div class="eraser-item">
+        <h4>Eraser</h4>
+        <input type="checkbox" name="eraser" value="" id="eraser">
+      </div>
     </div>
 
     <!-- The pixels table/canvas will build here -->

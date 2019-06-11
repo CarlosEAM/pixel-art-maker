@@ -3,6 +3,7 @@
 /*set some default styles*/
 h1,
 h3,
+h4,
 header,
 section,
 footer {
@@ -36,7 +37,8 @@ footer {
 }
 
 /* Content */
-section h3 {
+section h3,
+h4 {
   margin-top: 40px;
   margin-bottom: 16px;
   color: #391356;
@@ -93,6 +95,12 @@ section h3 {
 	width: 20px;
 	height: 20px;
 	box-shadow: 0 0 0 1px #000;
+}
+
+/* Tools Pallete */
+.tools-pallete-container {
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
 }
 
 /*RESPONSIVENESS*/
