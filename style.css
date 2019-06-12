@@ -100,9 +100,13 @@ h4 {
 .tools-pallete-container {
   margin-top: 64px;
   margin-bottom: 32px;
-  display: inline-grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 80px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.tools-pallete-container div {
+  flex-basis: 100px;
 }
 
 .clear-canvas {
