@@ -2,10 +2,10 @@
 
 A simple pixel art creator.
 
-## About
+## Note
 
-This project is part of a lesson by Udacity on Front-end Web Development.
-It was created for training purposes but anyone can fork it and play around.
+This project was part of a training exercise by Udacity on Front-end Web Development.
+I will try to keep the code up to date but is not guaranteed as it is not an active project.
 
 ## Install
 
