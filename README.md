@@ -1,6 +1,11 @@
 # **pixel-art-maker**
 
-A simple pixel art creator. Mobile friendly.
+A simple pixel art creator.
+
+## About
+
+This project is part of a lesson by Udacity on Front-end Web Development.
+It was created for training purposes but anyone can fork it and play around.
 
 ## Install
 
@@ -22,14 +27,8 @@ No installation required. Just open on any browser.
 
 ## Contributions
 
-1. Fork the project
-2. Make your changes or create feature
-  * Code guide:
-    - 2-space indentation
-    - Annotate you code 
-3. Submit pull request
-
-I will look into all pull requests as soon as possible.
+As the project was part of a class lesson, by Udacity, there is no contribution.
+You can fork it and do change it as you see fit.
 
 ## Issues
 
